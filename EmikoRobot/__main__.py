@@ -82,14 +82,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Halo, Nama saya MaryonoRobot.
+*Halo {} !* Nama saya 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕.
 
-Saya bot streaming telegram dengan beberapa fitur berguna. 
-Platform pendukung seperti 
-Youtube, Spotify, Resso, AppleMusic , Soundcloud dll.
+𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕 merupakan bot manage dan musik.
 
-Jangan ragu untuk menambahkan saya kegroupmu.
-
+• Jangan ragu untuk menambahkan saya kegroupmu.
 • Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
 
 ❃ Managed With By : @bakuangoreng
@@ -97,7 +94,6 @@ Jangan ragu untuk menambahkan saya kegroupmu.
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Tekan /help untuk melihat perintah saya yang tersedia.
 """
 
 buttons = [
@@ -121,10 +117,10 @@ HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @bakuangoreng \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Heyo, senang mendengar Anda ingin menyumbang!
+ Anda dapat mendukung proyek dengan menghubungi @bakuangoreng \
+ Mendukung tidak selalu finansial! \
+ Mereka yang tidak dapat memberikan dukungan keuangan dipersilakan untuk membantu kami mengembangkan bot di ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -391,7 +387,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/Amangggganteng/MaryonoManage"),
+                    InlineKeyboardButton(text="Source Code", url="https://t.me/mwahnq"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -416,14 +412,14 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            f"\nCongragulations, {dispatcher.bot.first_name} now ready to manage your group."
+            text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang*"
+            f"\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
             "\n\n*Admin Tools*"
-            "\nBasic Admin tools help you to protect and powerup your group."
-            "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
+            "\nAlat Admin dasar membantu Anda melindungi dan memperkuat grup Anda."
+            "\nAnda dapat melarang anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
             "\n\n*Greetings*"
-            "\nLets set a welcome message to welcome new users coming to your group."
-            "\nsend `/setwelcome [message]` to set a welcome message!",
+            "\nMari atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
+            "\nsend `/setwelcome [message]` untuk mengatur pesan selamat datang!",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -434,9 +430,9 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            f"\nAnda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
+            f"\nuntuk mendapatkan catatan cukup gunakan # di awal kata"
+            f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
@@ -450,8 +446,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/amanqs"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/bakuangoreng"),
+                    InlineKeyboardButton(text="Support", url="t.me/amanqss"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/mwahnq"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -469,6 +465,10 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
+                 [
+                     InlineKeyboardButton(text="Amang", url="t.me/mwahnq"),
+                    InlineKeyboardButton(text="amanqs", url="t.me/amanqss"),
+                 ]
                  [
                     InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
                     InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
