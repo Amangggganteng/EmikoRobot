@@ -82,18 +82,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Halo {} !* Nama saya 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕.
+*Hai {} !* Nama saya 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕.
 
 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕 merupakan bot manage dan musik.
 
 • Jangan ragu untuk menambahkan saya kegroupmu.
 • Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
-
-❃ Managed With By : @bakuangoreng
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
+• Managed With By : @mwahnq
 """
 
 buttons = [
