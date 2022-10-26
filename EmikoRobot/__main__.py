@@ -98,7 +98,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Mendapatkan bantuan", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Donasi!", url=f"t.me/mwahnq)""
+            text="Coba inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
