@@ -9,16 +9,16 @@ from EmikoRobot.events import register
 from EmikoRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/6efd51ef70401c1626742.png"
+PHOTO = "https://telegra.ph/file/08fdbf96f37505efd36f2.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm ZiyaXRobot.** \n\n"
-  TEXT += "⚪ **I'm Working Properly** \n\n"
-  TEXT += f"⚪ **My Master : [ʏᴀɴ](https://t.me/@renzyxo)** \n\n"
+  TEXT = f"**Hai [{event.sender.first_name}](tg://user?id={event.sender.id}), Saya AMG-Robot.** \n\n"
+  TEXT += "⚪ **Saya Bekerja Dengan Benar** \n\n"
+  TEXT += f"⚪ **Juragan Ku : [ᴀᴍᴀɴɢ](https://t.me/@mwahnq)** \n\n"
   TEXT += f"⚪ **Library Version :** `{telever}` \n\n"
   TEXT += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
   TEXT += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
-  TEXT += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("Help", "https://t.me/zypiya?start=help"), Button.url("Repo", "https://Xnxx.com")]]
+  TEXT += "**Terima Kasih Telah Menambahkan Saya Di Sini ❤️**"
+  BUTTON = [[Button.url("Donasi", "https://t.me/mwahnq?start=help"), Button.url("Support", "https;//t.me/amanqss")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
