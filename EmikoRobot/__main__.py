@@ -82,28 +82,28 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hai {} !* Nama saya ZiyaaXRobot.
+*Hai {} !* Nama saya 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕.
 
-ZiyaaXRobot merupakan bot manage dan musik.
+𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕 merupakan bot manage dan musik.
 
 • Jangan ragu untuk menambahkan saya kegroupmu.
 • Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
-• Developed With By : @zypiya
+• Managed With By : @mwahnq
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(text=f"Tentang {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Mendapatkan bantuan", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Coba inline!", switch_inline_query_current_chat=""
+            text="Donasi!", url=f"t.me/mwahnq)""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Tambahkan ZiyaaXRobot Ke Grup ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Tambahkan 𝑨𝑴𝑮-𝑹𝒐𝒃𝒐𝒕 Ke Grup ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
