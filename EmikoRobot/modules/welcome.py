@@ -199,12 +199,12 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    f"Welcome to {html.escape(chat.title)} my king.", reply_to_message_id=reply
+                    f"Selamat datang di {html.escape(chat.title)} Bosku Amang Tercinta.", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
                     f"#USER_JOINED\n"
-                    f"My King just joined the chat"
+                    f"My King Amang just joined the chat"
                 )
                 continue
 
@@ -250,7 +250,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                     bot.send_message(
                         JOIN_LOGGER,
                         f"""
-                        \\#NEWGROUP \
+                        \\#GRUP BARU \
                         \nGroup Name:   **\\{chat.title}** \
                         \nID:   `\\{chat.id}` \
                         \nCreator ID:   `\\{creator.id}` \
